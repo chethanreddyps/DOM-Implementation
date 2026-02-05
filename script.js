@@ -1,9 +1,14 @@
 function hello() {
   const userName = document.getElementById('inp').value;
   const hedr = document.getElementById('headerrr');
+  let size1 = userName.length;
+  if(size1!=0){
+    hedr.innerText = "Hello, " + userName;
+  }
+  else {
+    hedr.innerText = "Hello ";
+  }
 
-  hedr.innerText = "Hello, " + userName;
-}
 let box1 = document.getElementById('box-1');
 box1.addEventListener('click',() => {
     box1.style.backgroundColor = 'red'
@@ -19,4 +24,5 @@ box3.addEventListener('click',() => {
 let box4 = document.getElementById('box-4');
 box4.addEventListener('click',() => {
     box4.style.backgroundColor = 'yellow'
+
 })
