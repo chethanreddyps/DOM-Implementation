@@ -8,8 +8,9 @@ function hello() {
   else {
     hedr.innerText = "Hello ";
   }
-}
 
+//   hedr.innerText = "Hello, " + userName;
+}
 let box1 = document.getElementById('box-1');
 box1.addEventListener('click',() => {
     box1.style.backgroundColor = 'red'
@@ -27,4 +28,5 @@ box4.addEventListener('click',() => {
     box4.style.backgroundColor = 'yellow'
 
 })
+
 
